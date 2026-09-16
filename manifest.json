@@ -1,0 +1,19 @@
+{
+  "name": "爱心",
+  "short_name": "爱心",
+  "description": "一个爱心",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "icons/爱心.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

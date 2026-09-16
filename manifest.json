@@ -3,9 +3,9 @@
   "short_name": "爱心",
   "description": "一个爱心",
   "lang": "zh-CN",
-  "start_url": "/tools/",
-  "scope": "/tools/",
-  "display": "browser",
+  "start_url": "https://zjy0113.github.io/tools/",
+  "scope": " https://zjy0113.github.io/tools/",
+  "display": "minimal-ui",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [

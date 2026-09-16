@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <!-- 指定字符集为UTF-8-->
+        <meta charset="UTF-8">
+        <title>网络热门代码：浪漫至死不渝：爱心</title>
+        <script type="text/javascript">
+             //用于终止循环的变量
+            var interval=null;
+            //爱心的字符串数组
+            var string=[
+            "    ",
+            "        lovelovel           lovelovel        ",
+            "    lovelovelovelovel   lovelovelovelovel    ",
+            "   lovelovelovelovelovelovelovelovelovelov   ",
+            " lovelovelovelovelovelovelovelovelovelovelov ",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            "lovelovelovelovelovelovelovelovelovelovelovel",
+            " lovelovelovelovelovelovelovelovelovelovelov ",
+            "  lovelovelovelovelovelovelovelovelovelovel  ",
+            "   lovelovelovelovelovelovelovelovelovelov   ",
+            "    lovelovelovelovelovelovelovelovelovel    ",
+            "     lovelovelovelovelovelovelovelovelov     ",
+            "      lovelovelovelovelovelovelovelovel      ",
+            "        lovelovelovelovelovelovelovel        ",
+            "          lovelovelovelovelovelovel          ",
+            "            lovelovelovelovelovel            ",
+            "               lovelovelovelov               ",
+            "                  lovelovel                  ",
+            "                     lov                     ",
+        ]
+            //浏览器body对象
+            var body= null;
+            //循环计数变量
+            var int=0;
+            var outTextFun=function(){
+                //向浏览器页面输出
+                if(string.length>int){
+                    //如果没有输出完就输出
+                    body.innerText+=string[0]+string[int]+"\n";
+                    int++;
+                }else{
+                    //输出完了就终止
+                    clearInterval(interval);
+                }
+            }
+            //HTML加载完成后执行,避免意外情况
+            window.onload=function(){
+                //获取body对象
+                body= document.getElementById("Body");
+                //启动循环,间隔为200毫秒
+                setInterval(outTextFun,200)
+            }
+        </script>
+
+    </head>
+    <body style="background-color: #000;color: #f00;" >
+        <!-- HTML预格式文本 -->
+        <pre id="Body"></pre>
+    </body>
+</html>

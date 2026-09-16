@@ -5,7 +5,7 @@
   "lang": "zh-CN",
   "start_url": "/tools/",
   "scope": "/tools/",
-  "display": "fullscreen",
+  "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
